@@ -506,7 +506,23 @@
 						"From other Job": "other_job"
 					},
 					"url": "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/pre_trained_models/iCE40_human_detection_2.zip"
+				},
+				"freeze_layers" : {
+					"name": "Freeze Layers",
+					"type": "checkboxes",
+					"options": {
+						"fire1": "fire1",
+						"fire2": "fire2",
+						"fire3": "fire3",
+						"fire4": "fire4",
+						"fire5": "fire5",
+						"fire6": "fire6",
+						"fire7": "fire7"
+					},
+					"default": "",
+					"required": false
 				}
+
 			},
 			"tensorboard": {
 				"command": {
