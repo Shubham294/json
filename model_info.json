@@ -417,7 +417,7 @@
 	},
 	{
 		"model_name": "Human Presence 2.1",
-		"git_url": "https://github.com/LatticeSemi/Human-Presence-Detetction.git -b 2.1",
+		"git_url": "https://github.com/LatticeSemi/Human-Presence-Detetction.git -b Human-Presence-Detection2.1-layer-freezing",
 		"model_spec": {
 			"target_device": "Ultra Plus",
 			"target_application": "Object Detection",
@@ -517,7 +517,8 @@
 						"fire4": "fire4",
 						"fire5": "fire5",
 						"fire6": "fire6",
-						"fire7": "fire7"
+						"fire7": "fire7",
+						"conv12": "conv12"
 					},
 					"default": "",
 					"required": false
@@ -1383,7 +1384,8 @@
 						"fire4": "fire4",
 						"fire5": "fire5",
 						"fire6": "fire6",
-						"fire7": "fire7"
+						"fire7": "fire7",
+						"conv12": "conv12"
 					},
 					"default": "",
 					"required": false
