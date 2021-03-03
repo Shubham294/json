@@ -1745,7 +1745,7 @@
 
 	{
 		"model_name": "Human Count SSD MV2",
-		"git_url": "https://github.com/LatticeSemi/Human-Count.git -b Crosslink-NX-MV2-SqDet",
+		"git_url": "https://github.com/LatticeSemi/Human-Count.git -b Crosslink-NX-MV2-SSD",
 		"model_spec": {
 			"target_device": "Crosslink-NX",
 			"target_application": "Object Detection",
@@ -1770,57 +1770,58 @@
 					"type": "file",
 					"required": true
 				},
-				"dataset": {
-					"name": "Dataset Type",
-					"default": "VOC",
-					"type": "str",
-					"required": true
-				},
-				"net": {
-					"name": "Architecture",
-					"default": "SSD",
-					"type": "str",
-					"required": true
-				},
-				"data_path": {
+				"data_dir": {
 					"name": "Dataset Path",
 					"type": "dir",
 					"sub_type": "dataset",
 					"required": true
 				},
-				"train_dir": {
+				"name": {
 					"name": "Checkpoint Path",
 					"type": "dir",
 					"sub_type": "artefacts",
 					"required": true
 				},
-				"image_set": {
-					"name": "Image Set",
-					"default": "train",
-					"type": "str",
-					"required": true
-				},
-				"summary_epochs": {
-					"name": "Summary Steps",
-					"default": "1",
-					"type": "int",
-					"required": true
-				},
-				"max_epochs": {
-					"name": "Max Steps",
+				"epochs": {
+					"name": "Max Epochs",
 					"default": "1000",
 					"type": "int",
 					"required": true
 				},
-				"checkpoint_epochs": {
+				"checkpoint_interval": {
 					"name": "Checkpoint Interval",
 					"default": "1",
 					"type": "int",
 					"required": true
 				},
-				"gpu": {
-					"name": "Visible GPUs",
-					"default": "0",
+				"batch-size": {
+					"name": "Batch size",
+					"default": "8",
+					"type": "int",
+					"required": true
+				},
+				"lr-values": {
+					"name": "Learning-rate",
+					"default": "0.001;0.0001;0.00001",
+					"type": "str",
+					"required": true
+				},
+				"lr-boundaries": {
+					"name": "Learning-rate boundries",
+					"default": "320000;400000",
+					"type": "str",
+					"required": true
+
+				},
+				"momentum": {
+					"name": "momentum",
+					"default": "0.9",
+					"type": "float",
+					"required": true
+				},
+				"num-workers": {
+					"name": "number of workers",
+					"default": "1",
 					"type": "int",
 					"required": true
 				},
