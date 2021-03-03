@@ -1751,7 +1751,7 @@
 			"target_application": "Object Detection",
 			"target_class": "CNN",
 			"input_dim": "224x224",
-			"target_network": "SqueezeDet",
+			"target_network": "SSD",
 			"target_framework": "TensorFlow",
 			"target_framework_version": "1.14.0",
 			"sensAI_version": "['V3.1']",
@@ -1770,7 +1770,7 @@
 					"type": "file",
 					"required": true
 				},
-				"data_dir": {
+				"data-dir": {
 					"name": "Dataset Path",
 					"type": "dir",
 					"sub_type": "dataset",
@@ -1788,7 +1788,7 @@
 					"type": "int",
 					"required": true
 				},
-				"checkpoint_interval": {
+				"checkpoint-interval": {
 					"name": "Checkpoint Interval",
 					"default": "1",
 					"type": "int",
