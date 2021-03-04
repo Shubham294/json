@@ -1802,13 +1802,13 @@
 				},
 				"lr-values": {
 					"name": "Learning-rate",
-					"default": "0.001;0.0001;0.00001",
+					"default": "'0.001;0.0001;0.00001'",
 					"type": "str",
 					"required": true
 				},
 				"lr-boundaries": {
 					"name": "Learning-rate boundries",
-					"default": "320000;400000",
+					"default": "'320000;400000'",
 					"type": "str",
 					"required": true
 
