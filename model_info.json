@@ -1273,7 +1273,50 @@
 					"type": "flag",
 					"required": true
 				}
+			},
+			"map_calculation" : {
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/bias_add:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "3",
+					"type": "int",
+					"required": true
+				}
 			}
+
 		},
 		"SensAI": {
 			"device": "ECP5",
@@ -1282,6 +1325,7 @@
 			"collapse_layer": 1
 		}
 	},
+
 	{
 		"model_name": "Human Count Crosslink-NX-VGG-SqDet",
 		"git_url": "https://github.com/LatticeSemi/Human-Count.git -b Crosslink-NX-VGG-SqDet-layer-freezing",
