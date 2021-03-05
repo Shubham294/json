@@ -1293,6 +1293,13 @@
 					"extenstions": "pb",
 					"required": true
 				},
+				"data_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
 				"input_node": {
 					"name": "Input Node",
 					"default": "batch:0",
