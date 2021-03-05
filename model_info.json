@@ -1293,7 +1293,7 @@
 					"extenstions": "pb",
 					"required": true
 				},
-				"data_path": {
+				"dataset_path": {
 					"name": "Dataset Path",
 					"type": "dir",
 					"sub_type": "dataset",
