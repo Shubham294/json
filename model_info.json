@@ -1276,7 +1276,7 @@
 			},
 			"map_calculation" : {
 				"gpu_option" : false,
-                "metrics_option" : false,
+                "metrics_option" : true,
 
 				"command": {
 					"run_type": "python3"
