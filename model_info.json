@@ -1156,7 +1156,11 @@
 			"other_param": ""
 		},
 		"sections":{
-
+					"Model Matrices": {
+			"total loss": "loss: \\d\\d.\\d\\d",
+			"conf loss": "conf_loss: \\d\\d.\\d\\d",
+			"bbox loss": "bbox_loss: \\d\\d.\\d\\d"
+},
 		"training": {
 				"_comment": "Optional parameter: This determines that whether train section is available or not.",
 				"command": {
