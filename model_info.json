@@ -1899,7 +1899,7 @@
 				"name": {
 					"name": "Checkpoint Path",
 					"type": "dir",
-					"sub_type": "artefacts",
+					"sub_type": "checkpoints",
 					"required": true
 				},
 				"epochs": {
