@@ -1155,8 +1155,16 @@
 			"dataset_type": "KITTI",
 			"other_param": ""
 		},
-		"sections": {
-			"training": {
+		"sections":{
+		"Model Matrices": {
+			"name": "total loss",
+			"default": "total loss",
+			"type": "str",
+			"required": true
+
+		},
+
+		"training": {
 				"_comment": "Optional parameter: This determines that whether train section is available or not.",
 				"command": {
 					"run_type": "python3"
