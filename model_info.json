@@ -1157,10 +1157,9 @@
 		},
 		"sections":{
 		"Model Matrices": {
-			"name": "total loss",
-			"default": "total loss",
-			"type": "str",
-			"required": true
+			"total loss": "loss: \\d\\d.\\d\\d",
+			"conf loss": "conf_loss: \\d\\d.\\d\\d",
+			"bbox loss": "bbox_loss: \\d\\d.\\d\\d"
 
 		},
 
@@ -1175,6 +1174,12 @@
 					"type": "file",
 					"required": true
 				},
+				"Model Matrices": {
+			"total loss": "loss: \\d\\d.\\d\\d",
+			"conf loss": "conf_loss: \\d\\d.\\d\\d",
+			"bbox loss": "bbox_loss: \\d\\d.\\d\\d"
+
+		},
 				"dataset": {
 					"name": "Dataset Type",
 					"default": "KITTI",
