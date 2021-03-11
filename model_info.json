@@ -1168,10 +1168,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-			"total loss": "loss: \\d\\d.\\d\\d",
-			"conf loss": "conf_loss: \\d\\d.\\d\\d",
-			"bbox loss": "bbox_loss: \\d\\d.\\d\\d",
-			"class loss": "class_loss \\d"
+			"step: loss": "step (\\d+.\\d+), loss: (\\d+.\\d+)",
+			"conf loss": "conf_loss: (\\d+.\\d+)",
+			"bbox loss": "bbox_loss: (\\d+.\\d+)",
+			"class loss": "class_loss (\\d+.\\d+)"
 
 		},
 				"dataset": {
@@ -1301,7 +1301,7 @@
 					"required": true
 				},
 				"Model Matrices": {
-			"mAP": "mAP = \\d\\d.\\d\\d%"
+			"mAP": "mAP = (\\d+.\\d+)%"
 
 		},
 
