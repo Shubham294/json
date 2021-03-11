@@ -1168,7 +1168,7 @@
 					"required": true
 				},
 				"Model Matrices": {
-			"step: loss": "step (\\d+.\\d+), loss: (\\d+.\\d+)",
+			"step: loss": "step (\\d+.\\d+), loss = (\\d+.\\d+)",
 			"conf loss": "conf_loss: (\\d+.\\d+)",
 			"bbox loss": "bbox_loss: (\\d+.\\d+)",
 			"class loss": "class_loss (\\d+.\\d+)"
