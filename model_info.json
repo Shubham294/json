@@ -325,6 +325,13 @@
 					"type": "file",
 					"required": true
 				},
+				"Model Matrices": {
+					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf loss": "conf_loss: (\\d+.\\d+)",
+					"bbox loss": "bbox_loss: (\\d+.\\d+)",
+					"class loss": "class_loss (\\d+.\\d+)"
+
+				},
 				"dataset": {
 					"name": "Dataset Type",
 					"default": "KITTI",
@@ -441,6 +448,13 @@
 					"default": "src/train.py",
 					"type": "file",
 					"required": true
+				},
+				"Model Matrices": {
+					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf loss": "conf_loss: (\\d+.\\d+)",
+					"bbox loss": "bbox_loss: (\\d+.\\d+)",
+					"class loss": "class_loss (\\d+.\\d+)"
+
 				},
 				"dataset": {
 					"name": "Dataset Type",
@@ -1301,12 +1315,9 @@
 					"required": true
 				},
 				"Model Matrices": {
-			"mAP": "mAP = (\\d+.\\d+)%"
+					"mAP": "mAP = (\\d+.\\d+)%"
 
-		},
-
-
-
+				},
 				"dataset_path": {
 					"name": "Dataset Path",
 					"type": "dir",
@@ -1376,6 +1387,12 @@
 					"default": "src/train.py",
 					"type": "file",
 					"required": true
+				},
+				"Model Matrices": {
+					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf loss": "conf_loss: (\\d+.\\d+)",
+					"bbox loss": "bbox_loss: (\\d+.\\d+)",
+					"class loss": "class_loss (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
@@ -1513,6 +1530,10 @@
 					"type": "file",
 					"required": true
 				},
+				"Model Matrices": {
+					"mAP": "mAP = (\\d+.\\d+)%"
+
+				},
 				"pb": {
 					"name": "Tensorflow Model File",
 					"type": "file",
@@ -1585,6 +1606,12 @@
 					"default": "src/train.py",
 					"type": "file",
 					"required": true
+				},
+				"Model Matrices": {
+					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf loss": "conf_loss: (\\d+.\\d+)",
+					"bbox loss": "bbox_loss: (\\d+.\\d+)",
+					"class loss": "class_loss (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
@@ -1745,6 +1772,12 @@
 					"default": "src/train.py",
 					"type": "file",
 					"required": true
+				},
+				"Model Matrices": {
+					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf loss": "conf_loss: (\\d+.\\d+)",
+					"bbox loss": "bbox_loss: (\\d+.\\d+)",
+					"class loss": "class_loss (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
