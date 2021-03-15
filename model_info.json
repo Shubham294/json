@@ -326,10 +326,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-					"conf loss": "conf_loss: (\\d+.\\d+)",
-					"bbox loss": "bbox_loss: (\\d+.\\d+)",
-					"class loss": "class_loss (\\d+.\\d+)"
+					"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf_loss": "conf_loss: (\\d+.\\d+)",
+					"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+					"class_loss": "class_loss (\\d+.\\d+)"
 
 				},
 				"dataset": {
@@ -450,10 +450,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-					"conf loss": "conf_loss: (\\d+.\\d+)",
-					"bbox loss": "bbox_loss: (\\d+.\\d+)",
-					"class loss": "class_loss (\\d+.\\d+)"
+					"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf_loss": "conf_loss: (\\d+.\\d+)",
+					"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+					"class_loss": "class_loss (\\d+.\\d+)"
 
 				},
 				"dataset": {
@@ -1182,10 +1182,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-			"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-			"conf loss": "conf_loss: (\\d+.\\d+)",
-			"bbox loss": "bbox_loss: (\\d+.\\d+)",
-			"class loss": "class_loss (\\d+.\\d+)"
+			"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+			"conf_loss": "conf_loss: (\\d+.\\d+)",
+			"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+			"class_loss": "class_loss: (\\d+.\\d+)"
 
 		},
 				"dataset": {
@@ -1389,10 +1389,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-					"conf loss": "conf_loss: (\\d+.\\d+),",
-					"bbox loss": "bbox_loss: (\\d+.\\d+),",
-					"class loss": "class_loss: (\\d+.\\d+)"
+					"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf_loss": "conf_loss: (\\d+.\\d+)",
+					"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+					"class_loss": "class_loss: (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
@@ -1608,10 +1608,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-					"conf loss": "conf_loss: (\\d+.\\d+)",
-					"bbox loss": "bbox_loss: (\\d+.\\d+)",
-					"class loss": "class_loss (\\d+.\\d+)"
+					"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf_loss": "conf_loss: (\\d+.\\d+)",
+					"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+					"class_loss": "class_loss: (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
@@ -1774,10 +1774,10 @@
 					"required": true
 				},
 				"Model Matrices": {
-					"step: loss": "step (\\d+), loss = (\\d+.\\d+)",
-					"conf loss": "conf_loss: (\\d+.\\d+)",
-					"bbox loss": "bbox_loss: (\\d+.\\d+)",
-					"class loss": "class_loss (\\d+.\\d+)"
+					"step:loss": "step (\\d+), loss = (\\d+.\\d+)",
+					"conf_loss": "conf_loss: (\\d+.\\d+)",
+					"bbox_loss": "bbox_loss: (\\d+.\\d+)",
+					"class_loss": "class_loss: (\\d+.\\d+)"
 				},
 				"dataset": {
 					"name": "Dataset Type",
