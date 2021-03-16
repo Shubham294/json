@@ -43,7 +43,7 @@
 				"name" : "Pixel Shift Value",
 				"type": "int",
 				"default": "10"			
-			},
+			}
 		}
 	}
 }
