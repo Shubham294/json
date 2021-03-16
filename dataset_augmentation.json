@@ -40,9 +40,9 @@
 				"default": "100"		
 			},
 			"pixel_shift" : {
-				"name" : "Pixel Shift Value",
+				"name" : "Pixel shift value",
 				"type": "int",
-				"default": "10"			
+				"default": "10"		
 			}
 		}
 	}
