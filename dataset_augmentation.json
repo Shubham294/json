@@ -1,6 +1,6 @@
 {
 	"image_url": "latticesemi/ubuntu:latest",
-	"command" : "python3 /scripts/dataset_augmentation.py --input /lattice/dataset/kitti/ --output /lattice/dataset/kitti/",
+	"command" : "python3 /scripts/dataset_augmentation.py --input /lattice/dataset/kitti/ --output /lattice/dataset/",
 	"output_dimension" : {
 		"name": "Output Dimension",
 		"type": "str"
