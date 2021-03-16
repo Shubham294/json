@@ -38,7 +38,12 @@
 				"name" : "Augmentation Percentage",
 				"type": "int",
 				"default": "100"		
-			}
+			},
+			"pixel_shift" : {
+				"name" : "Pixel Shift Value",
+				"type": "int",
+				"default": "10"			
+			},
 		}
 	}
 }
