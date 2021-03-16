@@ -5,13 +5,6 @@
 		"name": "Output Dimension",
 		"type": "str"
 	},
-	"pixel_shift" : {
-		"name": "Pixel Shift",
-		"type": "checkbox",
-		"default": true,
-		"options" : {
-		}
-	},
 	"brightness" : {
 		"name": "Brightness",
 		"type": "checkbox",
