@@ -123,7 +123,7 @@
 						"unchecked": 0,
 						"checked": 1
 					},
-					"version": ['v3.1','v3.4'],
+					"version": ["v3.1","v3.4"],
 					"default": "checked"
 				},
 				"scale": {
@@ -228,7 +228,7 @@
 				"gpo_id": {
 				"name": "GPO ID 0x0310",
 				"type": "int",
-				"default": 0000,
+				"default": 0,
 				"version": ["v3.1"] 
 
 				}
