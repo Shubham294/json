@@ -123,7 +123,6 @@
 						"unchecked": 0,
 						"checked": 1
 					},
-					"version": ["v3.1","v3.4"],
 					"default": "checked"
 				},
 				"scale": {
@@ -135,7 +134,31 @@
 					"name": "Mean",
 					"type": "float",
 					"default": 0
+				},
+				"load_from_extmem": {
+					"name": "Store Input",
+					"type": "checkbox",
+					"options": {
+						"unchecked": 0,
+						"checked": 1
+					},
+					"default": "checked",
+					"version": ["v3.1"]
+				},
+				"store_to_extmem": {
+					"name": "Store Output",
+					"type": "checkbox",
+					"options": {
+						"unchecked": 0,
+						"checked": 1
+					},
+					"default": "unchecked",
+					"version": ["v3.1"]
+
 				}
+
+
+
 			},
 			"Ultra Plus": {
 				"scale": {
@@ -152,8 +175,43 @@
 					"name": "Required output depth range",
 					"type": "str",
 					"default": ""
-				}
+				},
+				"ebr_blk_size":{
+					"name": "On-chip Memory Block Size(16K/32K/64K/)",
+					"type": "dropdown",
+					"options": {
+						"16384": "16384",
+						"32768": "32768",
+						"65536": "65536"
+					},
+					"default":"16384",
+					"version": ["v3.0","v3.1"]
 			},
+				"conv1x1_mode":{
+						"name": "conv1x1 mode",
+						"type": "dropdown",
+						"options": {
+							"Single": "single",
+							"Dual": "dual",
+							"Quad": "quad"
+						},
+						"default":"Single",
+						"version": ["v3.1"]
+			},
+				"otf_post_processing": {
+						"name": "On-the-fly post processing",
+						"type": "checkbox",
+						"options": {
+							"unchecked": 0,
+							"checked": 1
+						},
+						"default": "unchecked",
+						"version": ["v3.1"]
+			}
+
+
+			},
+
 			"CrossLink-NX": {
 				"scale": {
 					"name": "Scale",
@@ -219,18 +277,22 @@
 					"version": ["v3.1"]
 
 				},
-				"external_memory_interfaced":{
+				"cross_link_external_mem_size":{
 					"name":"External memory interfaced",
 					"type": "int",
 					"default" : 8388608
 
 				},
-				"gpo_id": {
-				"name": "GPO ID 0x0310",
-				"type": "int",
-				"default": 0,
-				"version": ["v3.1"] 
-
+	
+				"On-the-fly_post_processing": {
+					"name": "On-the-fly post processing",
+					"type": "checkbox",
+					"options": {
+						"unchecked": 0,
+						"checked": 1
+					},
+					"default": "unchecked",
+					"version": ["v3.2"]
 				}
 			}
 		}
