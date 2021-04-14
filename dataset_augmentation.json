@@ -10,7 +10,7 @@
 		"name": "Brightness",
 		"type": "checkbox",
 		"default": true,
-		"help": "Images with increased brightness will be added in dataset",
+		"info": "Images with increased brightness will be added in dataset",
 		"help_image": "https://raw.githubusercontent.com/Shubham294/json/master/0b623718afd21f23_con_2.jpg",
 		"options" : {
 			"brightness_percentage" : {
@@ -28,7 +28,7 @@
 		"name": "contrast",
 		"type": "checkbox",
 		"default": true,
-		"help": "Images with increased contrast will be added in dataset",
+		"info": "Images with increased contrast will be added in dataset",
 		"help_image" : "https://raw.githubusercontent.com/Shubham294/json/master/0a4db5693da70448_con_2.jpg",
 		"options" : {
 			"contrast_percentage" : {
@@ -46,7 +46,7 @@
 		"name": "Canvas Shift",
 		"type": "checkbox",
 		"default": true,
-		"help": "Image will shift by X number of pixel (default by 10px). Image with shifted canvas will be added in dataset",
+		"info": "Image will shift by X number of pixel (default by 10px). Image with shifted canvas will be added in dataset",
 		"options" : {
 			"canvas_shift_percentage" : {
 				"name" : "% images of total dataset",
