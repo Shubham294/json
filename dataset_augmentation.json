@@ -4,14 +4,15 @@
 	"output_dimension" : {
 		"name": "Output Dimension",
 		"default": "224,224",
+		"info":"Dimension Width x Height",
 		"type": "str"
 	},
 	"brightness" : {
 		"name": "Brightness",
 		"type": "checkbox",
 		"default": true,
-		"info": "Images with increased brightness will be added in dataset",
-		"help_image": "https://raw.githubusercontent.com/Shubham294/json/master/0b623718afd21f23_con_2.jpg",
+		"info": "Images with increased brightness will be added in dataset with differnt brightness value",
+		"help_image": "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/augmentation_images/brightness.jpg",
 		"options" : {
 			"brightness_percentage" : {
 				"name" : "% images of total dataset",
@@ -28,8 +29,8 @@
 		"name": "contrast",
 		"type": "checkbox",
 		"default": true,
-		"info": "Images with increased contrast will be added in dataset",
-		"help_image" : "https://raw.githubusercontent.com/Shubham294/json/master/0a4db5693da70448_con_2.jpg",
+		"info": "Images with increased contrast will be added in dataset with different contrast value",
+		"help_image" : "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/augmentation_images/contrast.jpg",
 		"options" : {
 			"contrast_percentage" : {
 				"name" : "% images of total dataset",
@@ -46,7 +47,8 @@
 		"name": "Canvas Shift",
 		"type": "checkbox",
 		"default": true,
-		"info": "Image will shift by X number of pixel (default by 10px). Image with shifted canvas will be added in dataset",
+		"info": "Image will shift by X number of pixel (default 10px). Image with shifted canvas will be added in dataset",
+		"help_image" : "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/augmentation_images/canvas_shift.jpg",
 		"options" : {
 			"canvas_shift_percentage" : {
 				"name" : "% images of total dataset",
