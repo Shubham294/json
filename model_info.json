@@ -208,7 +208,7 @@
 					"required": true
 				},
                 "gray": {
-					"name": "mode",
+					"name": "gray",
 					"default": "True",
 					"type": "str",
 					"required": true
@@ -283,23 +283,118 @@
 				},
 				"execution_script": {
 					"name": "Execution Script",
-					"default": "src/genpb.py",
+					"default": "resnet_main.py",
 					"type": "file",
 					"required": true
 				},
-				"ckpt_dir": {
+				"train_dir": {
 					"name": "Checkpoint Path",
 					"type": "dir",
 					"sub_type": "artefacts",
-					"selector": "training.train_dir",
 					"required": true
 				},
-				"freeze": {
-					"default": "",
-					"type": "flag",
+				"train_data_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+				"log_root": {
+					"name": "log directory",
+					"type": "dir",
+					"sub_type":"artefacts",
+					"required": true
+				},
+				"dataset": {
+					"name": "Dataset Type",
+					"default": "signlang",
+					"type": "str",
+					"required": true
+				},
+				"image_size": {
+					"name": "Image size",
+					"default": "64",
+					"type": "int",
+					"required": true
+				},
+				"num_gpus": {
+					"name": "Visible GPUs",
+					"default": "0",
+					"type": "int",
+					"required": true
+				},
+				"mode": {
+					"name": "mode",
+					"default": "freeze",
+					"type": "str",
 					"required": true
 				}
-			}
+
+			},
+			"generate_tflite": {
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "gen_tflite_and_quant.py",
+					"type": "file",
+					"required": true
+				},
+				"input_path": {
+					"name": "Sample images path",
+					"type": "dir",
+					"sub_type" : "dataset",
+					"required": true
+				},
+				"tflite_path": {
+					"name": "log directory",
+					"type": "dir",
+					"sub_type":"artefacts",
+					"required": true
+				},
+				"pb":{
+					"name": "Frozen graph file",
+					"type": "file",
+					"extensions": "pb",
+					"required": true
+
+				}
+
+			},
+			"evaluate_tflite": {
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "evaluate_tflite.py",
+					"type": "file",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Sample images path",
+					"type": "dir",
+					"sub_type" : "dataset",
+					"required": true
+				},
+				"tflite_path": {
+					"name": "log directory",
+					"type": "dir",
+					"sub_type":"artefacts",
+					"required": true
+				}
+
+			},
+
+			"output_c_array": {
+				"command": {
+					"run_type": "xxd"
+				}
+				
+
+            }
+
 		},
 		"SensAI": {
 			"device": "ECP5",
