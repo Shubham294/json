@@ -332,6 +332,7 @@
 
 			},
 			"generate_tflite": {
+				"_comment": " Optional parameter: This determines that whether freeze part is available or not.",
 				"command": {
 					"run_type": "python3"
 				},
