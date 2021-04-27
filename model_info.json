@@ -302,14 +302,16 @@
 			},
 			"pre_freeze_cmd": {
 				"name": "Generate pbtxt",
-				"type":"genpbtxt",
-				"default": "--mode=freeze",
-				"required":true				
+				"type":"pre_freeze_cmd",
+				"default": "--mode=freeze"			
 				},
 			"generate_tflite": {
 				"_comment": " Optional parameter: This determines that whether freeze part is available or not.",
 				"command": {
 					"run_type": "python3"
+				},
+				"workspace":{
+					"type":"workspace"
 				},
 				"execution_script": {
 					"name": "Execution Script",
@@ -365,7 +367,7 @@
 
 			"output_c_array": {
 				"command": {
-					"run_type": "xxd"
+					"run_type": "python3"
 				}
 				
 
