@@ -370,7 +370,26 @@
 			"output_c_array": {
 				"command": {
 					"run_type": "python3"
-				}
+				},
+				"execution_script": {
+                    "name": "Execution Script",
+                    "default": "convert_to_c_array.py",
+                    "type": "file",
+                    "required": true
+                },
+                "tflite_path": {
+                    "name": "tflite file",
+                    "type": "file",
+                    "extensions":"tflite",
+                    "required": true
+                },
+                "output_file": {
+                    "name": "Output File",
+                    "default": "model.cc",
+                    "type": "str",
+                    "required": true
+                }
+
 				
 
             }
