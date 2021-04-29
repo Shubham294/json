@@ -298,13 +298,15 @@
 					"default": "",
 					"type": "flag",
 					"required": true
-				}
-			},
-			"pre_freeze_cmd": {
+				},
+				"pre_freeze_cmd": {
 				"name": "Generate pbtxt",
 				"type":"pre_freeze_cmd",
 				"default": "--mode=freeze"			
-				},
+				}
+
+			},
+
 			"generate_tflite": {
 				"_comment": " Optional parameter: This determines that whether freeze part is available or not.",
 				"command": {
