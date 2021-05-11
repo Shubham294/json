@@ -183,7 +183,7 @@
 					"required": true
 				},
 				"dataset": {
-					"name": "Dataset Type",
+					"name": "Dataset Typee",
 					"type": "dropdown",
 					"required": true,
 					"options":{
