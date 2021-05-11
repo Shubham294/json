@@ -184,7 +184,6 @@
 				},
 				"dataset": {
 					"name": "Dataset Type",
-					"default": "KITTI",
 					"type": "dropdown",
 					"required": true,
 					"options":{
